@@ -14,10 +14,6 @@ public class Factorial {
     }
 
     public int calculateFactorialRecursive(int number) {
-        if (number == 0) {
-            return 1;
-        } else {
-            return number * calculateFactorialRecursive(number - 1);
-        }
+        return number == 0 ? 1 : number * calculateFactorialRecursive(number - 1);
     }
 }
